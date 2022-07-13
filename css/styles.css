@@ -13,6 +13,7 @@
   --shadow-command-a-cl: rgba(0, 0, 0, 0.12);
   --shadow-command-b-cl: rgba(0, 0, 0, 0.14);
   --shadow-command-c-cl: rgba(0, 0, 0, 0.2);
+  --gradient-linear-bg: rgba(47, 48, 58, 0.4);
   --dark-bg-cl: #2f303a;
   --light-bg-cl: #f5f4fa;
   --active-bg-btn-hero: #188ce8;
@@ -178,12 +179,29 @@ body {
 }
 
 /* Section Hero */
+
 .section-hero {
-  background-color: var(--dark-bg-cl);
+  max-width: 1600px;
+  /* min-height: 600px; */
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: var(--dark-bg-cl); */
+  /* background-image: url(../images/backgrounds/bg1.jpg); */
+  background-image: linear-gradient(
+      to right,
+      var(--gradient-linear-bg),
+      var(--gradient-linear-bg)
+    ),
+    url(../images/backgrounds/bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
 .main-title {
   width: 696px;
   margin-left: auto;
@@ -318,10 +336,14 @@ body {
 }
 .filter-btn-current {
   background-color: var(--accent-txt-cl);
+  
 }
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--active-bg-btn-hero);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 /* Portfolio section cardset */
@@ -331,7 +353,16 @@ body {
     (100% - var(var(--indent-main)) * (var(--items-portfolio) - 1)) /
       var(--items-portfolio)
   );
+  cursor: pointer;
 }
+
+.portfolio-section-items:hover,
+.portfolio-section-items:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
 .portfolio-section-wrapper {
   padding-top: 20px;
   padding-right: 24px;
