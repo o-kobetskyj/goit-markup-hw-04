@@ -524,3 +524,45 @@ fill: currentColor;
 .footer-mail {
   margin-bottom: 9px;
 }
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+}
+.join-command-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.join-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white-txt-cl);
+  border-radius : 50%;
+}
+.join-icon {
+  fill: currentColor;
+}
+.join-social-link:hover,
+.join-social-link:focus {
+  background-color: var(--accent-txt-cl);
+  color: var(--white-txt-cl);
+}
+.join-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+
