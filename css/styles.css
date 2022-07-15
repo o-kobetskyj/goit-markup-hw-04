@@ -125,7 +125,6 @@ body {
   gap: var(--indent-header);
 }
 .main-nav-call {
-  display: inline-block;
   display: flex;
   margin-left: auto;
   gap: var(--indent-header);
@@ -161,22 +160,28 @@ body {
 }
 .main-nav-link:hover,
 .main-nav-link:focus,
-.main-nav-call-link:hover,
-.main-nav-call-link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-txt-cl);
 }
 .main-nav-current {
   color: var(--accent-txt-cl);
 }
-/* Header contacts */
-.main-nav-call-link {
-  display: inline-block;
+
+.contacts-link {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.contacts-icon {
+fill: currentColor;
 }
 
 /* Section Hero */
